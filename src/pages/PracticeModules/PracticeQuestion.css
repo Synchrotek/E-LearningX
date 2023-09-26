@@ -1,0 +1,225 @@
+/* Apply styles to the header section */
+header {
+    text-align: center;
+    background-color: rgb(121, 99, 224);
+    background-size: contain;
+    color: white;
+    padding: 50px;
+}
+
+body {
+    background-color: white;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Style the main section */
+main {
+    padding: 20px;
+}
+
+/* Style the problem section */
+.problem {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 800px;
+    /* Add a maximum width */
+}
+
+.problem h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.problem p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style the code editor container */
+.code-editor {
+    height: 400px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
+}
+
+/* Style the output display */
+.output {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Add margin at the bottom */
+}
+
+.output h2 {
+    font-size: 24px;
+}
+
+/* Style the run button */
+#run-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+#run-button:hover {
+    background-color: cyan;
+    border-radius: 20px;
+}
+
+/* Style the user manual section */
+.user-manual {
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px;
+    /* Increase padding for better readability */
+}
+
+/* Style the code format section */
+.printing-format {
+    background-color: rgb(244, 241, 241);
+    border: 2px solid rgb(222, 217, 217);
+    font-weight: bold;
+    /* Use font-weight for bold text */
+    padding: 20px;
+    /* Consistent padding value */
+}
+
+/* Style the sample output box */
+.box {
+    background-color: rgb(244, 241, 241);
+    border: 2px solid rgb(222, 217, 217);
+    font-weight: bold;
+    /* Use font-weight for bold text */
+    padding: 20px;
+    /* Consistent padding value */
+    font-size: 16px;
+}
+
+/* Style for the vertical tab container */
+.vertical-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    /* Adjust the width as needed */
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+}
+
+/* Style for the tab buttons */
+.tab-button {
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+/* Active tab button style */
+.active {
+    background-color: #ddd;
+}
+
+/* Style for the tab content */
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+/* Show the active tab content */
+.tab-content.active {
+    display: block;
+}
+
+/* Base styles for all screen sizes */
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .problem {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .code-editor {
+        height: 300px;
+    }
+
+    .output {
+        margin-top: 10px;
+    }
+
+    #run-button {
+        margin-top: 10px;
+    }
+}
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    /* Add more styles for medium screens here */
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    /* Add more styles for large screens here */
+}
+
+#PROB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
